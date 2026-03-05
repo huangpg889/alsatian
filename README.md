@@ -114,6 +114,7 @@ pnpm openclaw-cn onboard --install-daemon
   <a href="https://github.com/qqdxyg"><img src="https://avatars.githubusercontent.com/qqdxyg?v=4" width="48" height="48" alt="qqdxyg" /></a>
   <a href="https://github.com/ddupg"><img src="https://avatars.githubusercontent.com/ddupg?v=4" width="48" height="48" alt="ddupg" /></a>
   <a href="https://github.com/Daiyimo"><img src="https://avatars.githubusercontent.com/Daiyimo?v=4" width="48" height="48" alt="Daiyimo" /></a>
+  <a href="https://github.com/yebohong02"><img src="https://avatars.githubusercontent.com/yebohong02?v=4" width="48" height="48" alt="yebohong02" /></a>
 </p>
 
 ## 📋 开发计划
