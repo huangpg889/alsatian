@@ -153,7 +153,26 @@ function discoverInDirectory(params: {
         }
         if (!fs.existsSync(resolved)) {
           // Bundled source-only packages without dist/ are expected – skip silently
-          if (params.origin !== "bundled") {
+          // but still emit a candidate if the package has install metadata (npmSpec),
+          // so the channel catalog can offer the npm install prompt.
+          const hasInstallMeta = Boolean(resolvePackageOpenclawMeta(manifest!)?.install?.npmSpec);
+          if (hasInstallMeta) {
+            addCandidate({
+              candidates: params.candidates,
+              seen: params.seen,
+              idHint: deriveIdHint({
+                filePath: resolved,
+                packageName: manifest?.name,
+                hasMultipleExtensions: extensions.length > 1,
+              }),
+              source: resolved,
+              rootDir: fullPath,
+              origin: params.origin,
+              workspaceDir: params.workspaceDir,
+              manifest,
+              packageDir: fullPath,
+            });
+          } else if (params.origin !== "bundled") {
             params.diagnostics.push({
               level: "warn",
               message: `openclaw.extensions entry not found: ${extPath}`,
