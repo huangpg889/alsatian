@@ -875,6 +875,7 @@
                   "channels/feishu",
                   "channels/dingtalk-connector",
                   "channels/wecom",
+                  "channels/qqbot",
                   "channels/googlechat",
                   "channels/mattermost",
                   "channels/signal",

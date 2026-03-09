@@ -1,0 +1,78 @@
+{
+  "name": "@openclaw-cn/qqbot",
+  "version": "0.1.0",
+  "description": "QQ 频道/群 OpenClaw 渠道插件，通过社区版 @sliverp/aqbot 接入 QQ 机器人。",
+  "keywords": [
+    "openclaw",
+    "plugin",
+    "qq",
+    "qqbot"
+  ],
+  "homepage": "https://github.com/openclaw/openclaw-cn/tree/main/extensions/qqbot",
+  "bugs": {
+    "url": "https://github.com/openclaw/openclaw-cn/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openclaw/openclaw-cn.git",
+    "directory": "extensions/qqbot"
+  },
+  "files": [
+    "openclaw.plugin.json",
+    "package.json",
+    "README.md",
+    "dist/"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "peerDependencies": {
+    "openclaw": "*",
+    "openclaw-cn": "*"
+  },
+  "peerDependenciesMeta": {
+    "openclaw": {
+      "optional": true
+    },
+    "openclaw-cn": {
+      "optional": true
+    }
+  },
+  "openclaw": {
+    "extensions": [
+      "./dist/index.js"
+    ],
+    "channel": {
+      "id": "qqbot",
+      "label": "QQ",
+      "selectionLabel": "QQ (中文社区版)",
+      "docsPath": "/channels/qqbot",
+      "docsLabel": "qqbot",
+      "blurb": "QQ 频道/群机器人，通过社区版 aqbot 接入。",
+      "aliases": [
+        "qq",
+        "qq-bot"
+      ],
+      "order": 50
+    },
+    "install": {
+      "npmSpec": "@sliverp/aqbot@latest",
+      "defaultChoice": "npm"
+    }
+  }
+}

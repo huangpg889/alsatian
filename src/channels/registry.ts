@@ -12,6 +12,7 @@ export const CHAT_CHANNEL_ORDER = [
   "feishu",
   "dingtalk-connector",
   "wecom",
+  "qqbot",
   "slack",
   "signal",
   "imessage",
@@ -101,6 +102,16 @@ const CHAT_CHANNEL_META: Record<ChatChannelId, ChannelMeta> = {
     blurb: "企业微信机器人接入插件。",
     systemImage: "message",
   },
+  qqbot: {
+    id: "qqbot",
+    label: "QQ",
+    selectionLabel: "QQ (中文社区版)",
+    detailLabel: "QQ 机器人",
+    docsPath: "/channels/qqbot",
+    docsLabel: "qqbot",
+    blurb: "QQ 频道/群机器人，通过社区版 aqbot 接入。",
+    systemImage: "message",
+  },
   slack: {
     id: "slack",
     label: "Slack",
@@ -141,6 +152,8 @@ export const CHAT_CHANNEL_ALIASES: Record<string, ChatChannelId> = {
   dingding: "dingtalk-connector",
   wxwork: "wecom",
   "wechat-work": "wecom",
+  qq: "qqbot",
+  "qq-bot": "qqbot",
 };
 
 const normalizeChannelKey = (raw?: string | null): string | undefined => {

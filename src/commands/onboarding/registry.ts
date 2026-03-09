@@ -3,12 +3,14 @@ import type { ChannelChoice } from "../onboard-types.js";
 import type { ChannelOnboardingAdapter } from "./types.js";
 import { dingtalkConnectorOnboardingAdapter } from "./dingtalk-connector.js";
 import { wecomConnectorOnboardingAdapter } from "./wecom-connector.js";
+import { qqbotOnboardingAdapter } from "./qqbot.js";
 
 // Core onboarding adapters for channels whose official plugins do not provide
 // their own onboarding adapter (or may not be loaded at configure time).
 const CORE_ONBOARDING_ADAPTERS: ReadonlyMap<ChannelChoice, ChannelOnboardingAdapter> = new Map([
   ["dingtalk-connector", dingtalkConnectorOnboardingAdapter],
   ["wecom", wecomConnectorOnboardingAdapter],
+  ["qqbot", qqbotOnboardingAdapter],
 ]);
 
 const CHANNEL_ONBOARDING_ADAPTERS = () => {

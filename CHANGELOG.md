@@ -34,7 +34,11 @@ Docs: https://clawd.org.cn/
 
 ### 企业微信官方插件渠道支持
 
-- **新增企业微信渠道（`@wecom/wecom-openclaw-plugin`）**：新增企业微信官方连接器渠道插件 `@openclaw-cn/wecom-connector`，配置向导支持交互式设置必填项：`botId`（企业微信机器人 ID）、`secret`（机器人密钥）；配置完成后自动在 `channels.wecom-connector` 写入凭证
+- **新增企业微信渠道（`@wecom/wecom-openclaw-plugin`）**：新增企业微信官方连接器渠道插件 `@openclaw-cn/wecom-connector`，配置向导支持交互式设置必填项：`botId`（企业微信机器人 ID）、`secret`（机器人密钥）；配置完成后自动在 `channels.wecom` 写入凭证
+
+### QQ 机器人渠道支持
+
+- **新增 QQ 渠道（`@sliverp/aqbot`）**：新增 QQ 机器人渠道插件 `@openclaw-cn/qqbot`，通过社区版 `aqbot` 接入 QQ 频道/群机器人。配置向导支持交互式设置必填项：`appId`（QQ 机器人 AppID）、`clientSecret`（AppSecret）；配置完成后自动在 `channels.qqbot` 写入凭证
 
 ### bug修复
 
