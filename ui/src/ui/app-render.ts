@@ -138,11 +138,11 @@ export function renderApp(state: AppViewState) {
           </button>
           <div class="brand">
             <div class="brand-logo">
-              <img src="${logoHref}" alt="OpenClaw" />
+              <img src="${logoHref}" alt="3onedata/Alsation" />
             </div>
             <div class="brand-text">
-              <div class="brand-title">OPENCLAW</div>
-              <div class="brand-sub">网关仪表盘</div>
+              <div class="brand-title">3onedata Alsation</div>
+              <div class="brand-sub">三旺阿尔萨斯牧羊犬 AI智能体</div>
             </div>
           </div>
         </div>

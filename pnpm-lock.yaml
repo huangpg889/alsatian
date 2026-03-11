@@ -9,6 +9,7 @@ overrides:
   '@sinclair/typebox': 0.34.47
   hono: 4.11.10
   tar: 7.5.4
+  alsatian: link:.
   openclaw: link:.
 
 patchedDependencies:
@@ -358,7 +359,7 @@ importers:
         version: 10.5.0
     devDependencies:
       clawdbot:
-        specifier: workspace:openclaw-cn@*
+        specifier: workspace:@3onedata/alsatian@*
         version: link:../..
 
   extensions/imessage: {}
@@ -366,7 +367,7 @@ importers:
   extensions/line:
     devDependencies:
       clawdbot:
-        specifier: workspace:openclaw-cn@*
+        specifier: workspace:@3onedata/alsatian@*
         version: link:../..
 
   extensions/llm-task: {}
@@ -392,7 +393,7 @@ importers:
         version: 4.3.6
     devDependencies:
       clawdbot:
-        specifier: workspace:openclaw-cn@*
+        specifier: workspace:@3onedata/alsatian@*
         version: link:../..
 
   extensions/mattermost: {}
@@ -433,7 +434,7 @@ importers:
         specifier: ^1.2.2
         version: 1.2.2
       clawdbot:
-        specifier: workspace:openclaw-cn@*
+        specifier: workspace:@3onedata/alsatian@*
         version: link:../..
       express:
         specifier: ^5.2.1
@@ -447,7 +448,7 @@ importers:
   extensions/nostr:
     dependencies:
       clawdbot:
-        specifier: workspace:openclaw-cn@*
+        specifier: workspace:@3onedata/alsatian@*
         version: link:../..
       nostr-tools:
         specifier: ^2.20.0
@@ -508,7 +509,7 @@ importers:
   extensions/zalo:
     dependencies:
       clawdbot:
-        specifier: workspace:openclaw-cn@*
+        specifier: workspace:@3onedata/alsatian@*
         version: link:../..
       undici:
         specifier: 7.19.0
@@ -520,7 +521,7 @@ importers:
         specifier: 0.34.47
         version: 0.34.47
       clawdbot:
-        specifier: workspace:openclaw-cn@*
+        specifier: workspace:@3onedata/alsatian@*
         version: link:../..
 
   ui:

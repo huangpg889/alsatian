@@ -1,15 +1,16 @@
 {
-  "name": "openclaw-cn",
-  "version": "0.1.8-fix.3",
-  "description": "Openclaw 中文社区版 - WhatsApp gateway CLI (Baileys web) with Pi RPC agent",
+  "name": "@3onedata/alsatian",
+  "version": "0.1.8-fix.6",
+  "description": "Alsatian - WhatsApp gateway CLI (Baileys web) with Pi RPC agent",
   "keywords": [],
   "license": "MIT",
   "author": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jiulingyun/openclaw-cn"
+    "url": "https://github.com/huangpg889/alsatian"
   },
   "bin": {
+    "alsatian": "dist/entry.js",
     "clawdbot-cn": "dist/entry.js",
     "openclaw": "dist/entry.js",
     "openclaw-cn": "dist/entry.js"
@@ -105,6 +106,7 @@
     "ui:dev": "node scripts/ui.js dev",
     "ui:build": "node scripts/ui.js build",
     "start": "node scripts/run-node.mjs",
+    "alsatian": "node scripts/run-node.mjs",
     "openclaw-cn": "node scripts/run-node.mjs",
     "gateway:watch": "node scripts/watch-node.mjs gateway --force",
     "gateway:dev": "CLAWDBOT_SKIP_CHANNELS=1 node scripts/run-node.mjs --dev gateway",
@@ -265,6 +267,7 @@
       "@sinclair/typebox": "0.34.47",
       "hono": "4.11.10",
       "tar": "7.5.4",
+      "alsatian": "link:.",
       "openclaw": "link:.",
       "libsignal": "npm:@openclaw-cn/libsignal@2.0.1"
     },
